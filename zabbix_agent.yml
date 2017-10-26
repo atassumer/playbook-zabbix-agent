@@ -3,7 +3,7 @@
     - role: dj-wasabi.zabbix-agent
       zabbix_agent_server: "{{ zabbix_server_ip }}"
       zabbix_agent_serveractive: "{{ zabbix_server_ip }}"
-      zabbix_agent_hostname: {{ inventory_hostname }}
+      zabbix_agent_hostname: "{{ inventory_hostname }}"
       zabbix_url: "{{ zabbix_url }}"
       zabbix_api_use: false # use zabbix_api_create_hosts and/or zabbix_api_create_hostgroup from 0.8.0
       zabbix_create_host: present
